@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta name="theme-color" content="#0F5132">
+<title>Yearly Membership · Islamic & Educational Center Ezan</title>
+<meta name="description" content="Become a yearly member of the Islamic & Educational Center Ezan of Greater Des Moines. Your annual membership gives the center steady, dependable support all year long.">
+<link rel="icon" href="assets/ezan-logo.webp" type="image/webp">
+
+<meta property="og:title" content="Yearly Membership · IEC Ezan">
+<meta property="og:description" content="Join as a yearly member and support the center all year long.">
+<meta property="og:image" content="assets/ezan-logo.webp">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://donate.iecezan.com/membership.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4Y1B25T6MM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4Y1B25T6MM');
+</script>
+
+<style>
+  :root{
+    --green-900:#0B3D2E;
+    --green-700:#0F5132;
+    --green-500:#2E7D5B;
+    --gold:#C9A961;
+    --gold-light:#E2C580;
+    --cream:#FAF7F0;
+    --cream-2:#F3EDDF;
+    --ink:#1F2A24;
+    --muted:#5B6B62;
+    --line:#E2DCC9;
+    --white:#FFFFFF;
+    --radius:14px;
+    --shadow-sm:0 1px 3px rgba(15,81,50,.08);
+    --shadow:0 8px 24px rgba(15,81,50,.10);
+    --shadow-lg:0 20px 50px rgba(15,81,50,.18);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    color:var(--ink);background:var(--cream);line-height:1.6;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.2;color:var(--green-900)}
+  h1{font-size:clamp(2.2rem,6vw,3.6rem)}
+  h2{font-size:clamp(1.8rem,4.5vw,2.6rem);margin-bottom:.5rem}
+  h3{font-size:clamp(1.3rem,3vw,1.6rem)}
+  p{color:var(--ink);font-size:1rem}
+  a{color:var(--green-700);text-decoration:none;transition:color .2s}
+  a:hover{color:var(--gold)}
+  img{max-width:100%;height:auto;display:block}
+  .container{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
+
+  /* ---- Header ---- */
+  header{
+    position:sticky;top:0;z-index:100;
+    background:rgba(11,61,46,.97);backdrop-filter:blur(8px);
+    border-bottom:1px solid rgba(201,169,97,.25);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1120px;margin:0 auto;gap:12px}
+  .brand{display:flex;align-items:center;gap:12px;color:var(--cream);min-width:0;flex:1}
+  .brand img{width:44px;height:44px;border-radius:8px;background:var(--cream);padding:4px;flex-shrink:0}
+  .brand-text{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.05rem;line-height:1.15;color:var(--cream);min-width:0}
+  .brand-text small{display:block;font-family:'Inter',sans-serif;font-size:.7rem;font-weight:400;color:var(--gold-light);letter-spacing:.06em;text-transform:uppercase}
+  .nav-actions{display:flex;align-items:center;gap:8px;flex-shrink:0}
+  .lang-toggle{display:inline-flex;background:rgba(255,255,255,.08);border:1px solid rgba(201,169,97,.4);border-radius:999px;padding:3px}
+  .lang-toggle button{background:transparent;border:0;color:var(--cream);padding:6px 12px;border-radius:999px;font-weight:600;font-size:.8rem;cursor:pointer;font-family:inherit;letter-spacing:.04em}
+  .lang-toggle button.active{background:var(--gold);color:var(--green-900)}
+  .nav-link{
+    color:var(--gold-light);font-weight:600;font-size:.78rem;
+    display:inline-flex;align-items:center;gap:4px;white-space:nowrap;
+    padding:6px 10px;border-radius:999px;border:1px solid rgba(201,169,97,.4);
+    background:rgba(255,255,255,.05);letter-spacing:.02em;
+  }
+  .nav-link:hover{color:var(--green-900);background:var(--gold)}
+  .nav-link.solid{background:var(--gold);color:var(--green-900);border-color:var(--gold)}
+  .nav-link.solid:hover{background:var(--gold-light);color:var(--green-900)}
+  .nav-link .full{display:none}
+  @media(min-width:720px){
+    .nav-link{font-size:.85rem;padding:7px 14px}
+    .nav-link .full{display:inline}
+    .nav-link .short{display:none}
+    .brand img{width:52px;height:52px}
+    .brand-text{font-size:1.15rem}
+  }
+  /* compact header on small screens */
+  header .bshort{display:inline}
+  header .bfull{display:none}
+  @media(max-width:719px){
+    header .brand-text{font-size:1.02rem}
+    header .brand-text small{display:none}
+    .hide-mobile{display:none !important}
+  }
+  @media(min-width:720px){
+    header .bshort{display:none}
+    header .bfull{display:inline}
+  }
+
+  /* ---- Hero ---- */
+  .hero{
+    color:var(--cream);text-align:center;
+    background:linear-gradient(135deg,var(--green-900) 0%,var(--green-700) 60%,var(--green-500) 100%);
+    padding:54px 20px 64px;position:relative;overflow:hidden;
+  }
+  .hero::before{
+    content:'';position:absolute;inset:0;
+    background-image:
+      radial-gradient(circle at 12% 18%,rgba(201,169,97,.18) 0,transparent 35%),
+      radial-gradient(circle at 88% 82%,rgba(201,169,97,.14) 0,transparent 40%);
+    pointer-events:none;
+  }
+  .hero-inner{position:relative;max-width:780px;margin:0 auto}
+  .hero .eyebrow{display:inline-block;color:var(--gold-light);letter-spacing:.18em;text-transform:uppercase;font-size:.78rem;font-weight:600;margin-bottom:14px}
+  .hero h1{color:var(--cream);margin-bottom:14px}
+  .hero h1 .accent{color:var(--gold-light);font-style:italic}
+  .hero p{color:rgba(250,247,240,.88);font-size:1.08rem;max-width:560px;margin:0 auto}
+  .hero-cta{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+  /* ---- Sections shared ---- */
+  .section-eyebrow{color:var(--gold);letter-spacing:.18em;text-transform:uppercase;font-size:.78rem;font-weight:600;margin-bottom:10px;display:block}
+  .lead{color:var(--muted);font-size:1.05rem;max-width:640px;margin:0 auto 36px}
+
+  /* ---- Buttons ---- */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:14px 28px;border-radius:999px;font-weight:600;font-size:.95rem;
+    border:0;cursor:pointer;font-family:inherit;transition:transform .15s,box-shadow .2s,background .2s;
+    text-decoration:none;
+  }
+  .btn-primary{background:var(--gold);color:var(--green-900);box-shadow:var(--shadow)}
+  .btn-primary:hover{background:var(--gold-light);transform:translateY(-1px);color:var(--green-900)}
+  .btn-ghost{background:rgba(255,255,255,.08);color:var(--cream);border:1px solid rgba(201,169,97,.55)}
+  .btn-ghost:hover{background:rgba(201,169,97,.2);color:var(--cream)}
+
+  /* ---- Why membership ---- */
+  .why{padding:56px 0;background:var(--cream-2)}
+  .why .center{text-align:center;margin-bottom:36px}
+  .why-grid{display:grid;gap:18px;grid-template-columns:1fr;max-width:1000px;margin:0 auto}
+  @media(min-width:760px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+  .why-card{
+    background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px 24px;box-shadow:var(--shadow-sm);text-align:center;
+  }
+  .why-card .ic{
+    width:52px;height:52px;border-radius:50%;background:var(--green-700);color:var(--gold-light);
+    display:flex;align-items:center;justify-content:center;margin:0 auto 16px;
+  }
+  .why-card .ic svg{width:26px;height:26px}
+  .why-card h3{font-size:1.25rem;margin-bottom:8px}
+  .why-card p{color:var(--muted);font-size:.93rem}
+
+  /* ---- Membership vs donation note ---- */
+  .compare{padding:52px 0;background:var(--white)}
+  .compare-wrap{max-width:820px;margin:0 auto;display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:700px){.compare-wrap{grid-template-columns:1fr 1fr}}
+  .compare-box{
+    border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;background:var(--cream);
+  }
+  .compare-box.accent{background:linear-gradient(135deg,rgba(201,169,97,.14),rgba(201,169,97,.04));border-color:var(--gold)}
+  .compare-box h3{font-size:1.2rem;margin-bottom:6px}
+  .compare-box p{color:var(--muted);font-size:.93rem;margin-bottom:14px}
+  .compare-box a{font-weight:600;font-size:.9rem}
+
+  /* ---- Fee / tip note ---- */
+  .fee-note{
+    max-width:820px;margin:0 auto 28px;padding:16px 20px;
+    background:linear-gradient(90deg,rgba(201,169,97,.15),rgba(201,169,97,.05));
+    border:1px solid var(--gold);border-left:4px solid var(--gold);
+    border-radius:8px;color:var(--green-900);font-size:.95rem;
+  }
+  .fee-note a{font-weight:700;text-decoration:underline}
+
+  /* ---- Join / Givebutter embed ---- */
+  .join{padding:48px 0 64px;background:var(--cream);scroll-margin-top:80px}
+  .join .center{text-align:center;margin-bottom:32px}
+  .join-card{
+    max-width:760px;margin:0 auto;background:var(--white);
+    border-radius:var(--radius);box-shadow:var(--shadow-lg);
+    border:1px solid var(--line);overflow:hidden;
+  }
+  .join-card-header{
+    background:linear-gradient(135deg,var(--cream-2),#fff);
+    padding:24px 28px;border-bottom:1px solid var(--line);
+  }
+  .join-card-header h2{font-size:1.5rem;margin-bottom:4px}
+  .join-card-header p{color:var(--muted);font-size:.95rem}
+  .join-iframe-wrap{width:100%;background:var(--cream-2);min-height:780px;position:relative}
+  .join-iframe-wrap iframe{width:100%;min-height:780px;border:0;display:block}
+  .join-fallback{text-align:center;padding:28px 24px;background:var(--cream-2);border-top:1px solid var(--line)}
+  .join-fallback p{color:var(--muted);font-size:.9rem;margin-bottom:14px}
+
+  /* ---- FAQ ---- */
+  .faq{padding:56px 0;background:var(--white)}
+  .faq .center{text-align:center;margin-bottom:32px}
+  .faq-list{max-width:760px;margin:0 auto;display:grid;gap:12px}
+  .faq-item{
+    background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);
+    overflow:hidden;
+  }
+  .faq-item summary{
+    cursor:pointer;list-style:none;padding:18px 22px;font-weight:600;
+    color:var(--green-900);font-size:1rem;display:flex;justify-content:space-between;gap:14px;align-items:center;
+  }
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary::after{content:'+';color:var(--gold);font-size:1.4rem;line-height:1;flex-shrink:0}
+  .faq-item[open] summary::after{content:'\2212'}
+  .faq-item .faq-body{padding:0 22px 20px;color:var(--muted);font-size:.94rem}
+
+  /* ---- Footer ---- */
+  footer{background:var(--green-900);color:rgba(250,247,240,.78);padding:48px 20px 24px;text-align:center}
+  footer .container{display:flex;flex-direction:column;align-items:center;gap:18px}
+  footer .brand{justify-content:center}
+  footer .brand-text{color:var(--cream)}
+  footer .brand-text small{color:var(--gold-light)}
+  footer p{color:rgba(250,247,240,.65);font-size:.85rem}
+  footer .small-links{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;font-size:.9rem}
+  footer .small-links a{color:var(--gold-light)}
+  footer .small-links a:hover{color:var(--cream)}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="nav">
+    <a href="https://iecezan.com" class="brand" title="Back to main site">
+      <img src="assets/ezan-logo.webp" alt="IEC Ezan logo">
+      <span class="brand-text" data-i18n="brand">
+        <span class="bfull">Islamic &amp; Educational Center Ezan</span><span class="bshort">IEC Ezan</span>
+        <small data-i18n="brandSub">of Greater Des Moines</small>
+      </span>
+    </a>
+    <div class="nav-actions">
+      <a href="index.html" class="nav-link solid" data-i18n="navDonate"><span class="full">Donate</span><span class="short">Donate</span></a>
+      <a href="https://iecezan.com" class="nav-link hide-mobile" data-i18n="navMain"><span class="full">&larr; Main site</span><span class="short">&larr;</span></a>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="active" aria-pressed="true">EN</button>
+        <button type="button" data-lang="bs" aria-pressed="false">BS</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow" data-i18n="heroEyebrow">Yearly Membership</span>
+    <h1 data-i18n="heroTitle">Become a <span class="accent">member</span> of IEC Ezan</h1>
+    <p data-i18n="heroSub">Membership is how our community carries the center through the whole year &mdash; not just one gift, but steady support the board can plan around.</p>
+    <div class="hero-cta">
+      <a href="#join" class="btn btn-primary" data-i18n="heroBtnJoin">Join or renew &darr;</a>
+      <a href="index.html" class="btn btn-ghost" data-i18n="heroBtnDonate">Make a donation instead</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY MEMBERSHIP ============ -->
+<section class="why">
+  <div class="container">
+    <div class="center">
+      <span class="section-eyebrow" data-i18n="whyEyebrow">Why It Matters</span>
+      <h2 data-i18n="whyTitle">What your membership does</h2>
+      <p class="lead" data-i18n="whyLead">Donations come and go with the seasons. Membership is what lets the center plan ahead with confidence.</p>
+    </div>
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg></div>
+        <h3 data-i18n="why1Title">Support all year</h3>
+        <p data-i18n="why1Body">One yearly membership keeps the lights on, the doors open, and our programs running every month &mdash; not only when there's a fundraiser.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3 data-i18n="why2Title">Count your household in</h3>
+        <p data-i18n="why2Body">Joining as a member puts your family on the roll of the center &mdash; a standing part of the jamaat, not just a name on a receipt.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3 data-i18n="why3Title">Simple and tax-deductible</h3>
+        <p data-i18n="why3Body">Pay once for the year and you're set. IEC Ezan is a registered 501(c)(3) nonprofit, so your membership is tax-deductible and you'll get a receipt by email.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ MEMBERSHIP VS DONATION ============ -->
+<section class="compare">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:28px">
+      <span class="section-eyebrow" data-i18n="compareEyebrow">Not Sure Which?</span>
+      <h2 data-i18n="compareTitle">Membership or donation?</h2>
+    </div>
+    <div class="compare-wrap">
+      <div class="compare-box accent">
+        <h3 data-i18n="compare1Title">Yearly membership</h3>
+        <p data-i18n="compare1Body">A set amount once a year that supports the center's ongoing operations. Best if IEC Ezan is your masjid and you want to be counted as part of it.</p>
+        <a href="#join" data-i18n="compare1Link">Join or renew &darr;</a>
+      </div>
+      <div class="compare-box">
+        <h3 data-i18n="compare2Title">One-time donation</h3>
+        <p data-i18n="compare2Body">Give any amount, any time, to a specific campaign &mdash; Buy a Brick, the mosque construction fund, or a special event.</p>
+        <a href="index.html" data-i18n="compare2Link">Go to the donation page &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOIN / GIVEBUTTER EMBED ============ -->
+<section class="join" id="join">
+  <div class="container">
+
+    <div class="center">
+      <span class="section-eyebrow" data-i18n="joinEyebrow">Join Us</span>
+      <h2 data-i18n="joinTitle">Start your yearly membership</h2>
+      <p class="lead" data-i18n="joinLead">Choose your membership below and complete it securely through Givebutter. Card, bank, Apple Pay, Google Pay, PayPal, and Venmo are all accepted.</p>
+    </div>
+
+    <div class="fee-note" data-i18n="feeNote">
+      <strong>Good to know:</strong> the center receives your full membership &mdash; processing fees are covered. Givebutter will suggest an optional tip for itself at checkout, which you're welcome to set to $0. <a href="index.html#before-you-donate">See how &rarr;</a>
+    </div>
+
+    <div class="join-card">
+      <div class="join-card-header">
+        <h2 data-i18n="joinCardTitle">Yearly Membership</h2>
+        <p data-i18n="joinCardSub">Islamic &amp; Educational Center Ezan of Greater Des Moines</p>
+      </div>
+      <div class="join-iframe-wrap">
+        <iframe
+          id="joinIframe"
+          src="https://givebutter.com/embed/c/yearly-membership-ezan"
+          title="Yearly membership for IEC Ezan via Givebutter"
+          loading="lazy"
+          allow="payment"
+        ></iframe>
+      </div>
+      <div class="join-fallback">
+        <p data-i18n="joinFallback">If the form above doesn't load, you can join directly on Givebutter:</p>
+        <a href="https://givebutter.com/yearly-membership-ezan"
+           target="_blank" rel="noopener"
+           class="btn btn-primary" data-i18n="joinFallbackBtn">
+          Open Givebutter Page &rarr;
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq">
+  <div class="container">
+    <div class="center">
+      <span class="section-eyebrow" data-i18n="faqEyebrow">Questions</span>
+      <h2 data-i18n="faqTitle">Common questions</h2>
+    </div>
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary data-i18n="faq1Q">Am I already a member?</summary>
+        <div class="faq-body" data-i18n="faq1A">If you're not sure whether your household is registered or when your membership was last renewed, reach out to the center and we'll check for you. Contact details are on the <a href="https://iecezan.com#contact">main site</a>.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary data-i18n="faq2Q">Can one membership cover my whole family?</summary>
+        <div class="faq-body" data-i18n="faq2A">Membership is normally registered per household. If you'd like your family listed together, or you have a question about your situation, please <a href="https://iecezan.com#contact">get in touch</a> and we'll help you sort it out.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary data-i18n="faq3Q">Does my membership replace donating?</summary>
+        <div class="faq-body" data-i18n="faq3A">No &mdash; they do different jobs. Membership supports the center's day-to-day operations through the year, while donations go to specific campaigns like the new mosque. Many members do both, as they're able.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary data-i18n="faq4Q">Is my membership tax-deductible?</summary>
+        <div class="faq-body" data-i18n="faq4A">Yes. IEC Ezan of Greater Des Moines is a registered 501(c)(3) nonprofit, and Givebutter will email you a receipt for your records as soon as your payment goes through.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary data-i18n="faq5Q">I'd rather pay in person or by check.</summary>
+        <div class="faq-body" data-i18n="faq5A">That's completely fine. Speak to someone at the center or <a href="https://iecezan.com#contact">contact us</a> and we'll take care of your membership that way.</div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <a href="https://iecezan.com" class="brand">
+      <img src="assets/ezan-logo.webp" alt="IEC Ezan" style="width:48px;height:48px;border-radius:8px;background:var(--cream);padding:4px">
+      <span class="brand-text">
+        Islamic &amp; Educational Center Ezan
+        <small>of Greater Des Moines</small>
+      </span>
+    </a>
+    <p style="max-width:480px" data-i18n="footerTag">Thank you for standing with our community. May Allah accept from you and your family.</p>
+    <div class="small-links">
+      <a href="index.html" data-i18n="footerDonate">Donate</a>
+      <a href="https://iecezan.com" data-i18n="footerHome">Main Site</a>
+      <a href="https://iecezan.com#about" data-i18n="footerAbout">About</a>
+      <a href="https://iecezan.com#contact" data-i18n="footerContact">Contact</a>
+      <a href="https://www.facebook.com/ICEzanDSM/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/iecezan/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <p style="margin-top:8px">&copy; <span id="yr"></span> Islamic &amp; Educational Center Ezan of Greater Des Moines. <span data-i18n="footerRights">All rights reserved.</span></p>
+  </div>
+</footer>
+
+<script>
+/* ---------- EN/BS dictionary ---------- */
+const i18n = {
+  en: {
+    brand: "Islamic &amp; Educational Center Ezan",
+    brandShort: "IEC Ezan",
+    brandSub: "of Greater Des Moines",
+    navDonate: '<span class="full">Donate</span><span class="short">Donate</span>',
+    navMain: '<span class="full">&larr; Main site</span><span class="short">&larr;</span>',
+    heroEyebrow: "Yearly Membership",
+    heroTitle: 'Become a <span class="accent">member</span> of IEC Ezan',
+    heroSub: "Membership is how our community carries the center through the whole year &mdash; not just one gift, but steady support the board can plan around.",
+    heroBtnJoin: "Join or renew &darr;",
+    heroBtnDonate: "Make a donation instead",
+    whyEyebrow: "Why It Matters",
+    whyTitle: "What your membership does",
+    whyLead: "Donations come and go with the seasons. Membership is what lets the center plan ahead with confidence.",
+    why1Title: "Support all year",
+    why1Body: "One yearly membership keeps the lights on, the doors open, and our programs running every month &mdash; not only when there's a fundraiser.",
+    why2Title: "Count your household in",
+    why2Body: "Joining as a member puts your family on the roll of the center &mdash; a standing part of the jamaat, not just a name on a receipt.",
+    why3Title: "Simple and tax-deductible",
+    why3Body: "Pay once for the year and you're set. IEC Ezan is a registered 501(c)(3) nonprofit, so your membership is tax-deductible and you'll get a receipt by email.",
+    compareEyebrow: "Not Sure Which?",
+    compareTitle: "Membership or donation?",
+    compare1Title: "Yearly membership",
+    compare1Body: "A set amount once a year that supports the center's ongoing operations. Best if IEC Ezan is your masjid and you want to be counted as part of it.",
+    compare1Link: "Join or renew &darr;",
+    compare2Title: "One-time donation",
+    compare2Body: "Give any amount, any time, to a specific campaign &mdash; Buy a Brick, the mosque construction fund, or a special event.",
+    compare2Link: "Go to the donation page &rarr;",
+    joinEyebrow: "Join Us",
+    joinTitle: "Start your yearly membership",
+    joinLead: "Choose your membership below and complete it securely through Givebutter. Card, bank, Apple Pay, Google Pay, PayPal, and Venmo are all accepted.",
+    feeNote: '<strong>Good to know:</strong> the center receives your full membership &mdash; processing fees are covered. Givebutter will suggest an optional tip for itself at checkout, which you\'re welcome to set to $0. <a href="index.html#before-you-donate">See how &rarr;</a>',
+    joinCardTitle: "Yearly Membership",
+    joinCardSub: "Islamic &amp; Educational Center Ezan of Greater Des Moines",
+    joinFallback: "If the form above doesn't load, you can join directly on Givebutter:",
+    joinFallbackBtn: "Open Givebutter Page &rarr;",
+    faqEyebrow: "Questions",
+    faqTitle: "Common questions",
+    faq1Q: "Am I already a member?",
+    faq1A: 'If you\'re not sure whether your household is registered or when your membership was last renewed, reach out to the center and we\'ll check for you. Contact details are on the <a href="https://iecezan.com#contact">main site</a>.',
+    faq2Q: "Can one membership cover my whole family?",
+    faq2A: 'Membership is normally registered per household. If you\'d like your family listed together, or you have a question about your situation, please <a href="https://iecezan.com#contact">get in touch</a> and we\'ll help you sort it out.',
+    faq3Q: "Does my membership replace donating?",
+    faq3A: "No &mdash; they do different jobs. Membership supports the center's day-to-day operations through the year, while donations go to specific campaigns like the new mosque. Many members do both, as they're able.",
+    faq4Q: "Is my membership tax-deductible?",
+    faq4A: "Yes. IEC Ezan of Greater Des Moines is a registered 501(c)(3) nonprofit, and Givebutter will email you a receipt for your records as soon as your payment goes through.",
+    faq5Q: "I'd rather pay in person or by check.",
+    faq5A: 'That\'s completely fine. Speak to someone at the center or <a href="https://iecezan.com#contact">contact us</a> and we\'ll take care of your membership that way.',
+    footerTag: "Thank you for standing with our community. May Allah accept from you and your family.",
+    footerDonate: "Donate",
+    footerHome: "Main Site",
+    footerAbout: "About",
+    footerContact: "Contact",
+    footerRights: "All rights reserved."
+  },
+  bs: {
+    brand: "Islamsko-edukativni centar Ezan",
+    brandShort: "IEC Ezan",
+    brandSub: "Greater Des Moines",
+    navDonate: '<span class="full">Doniraj</span><span class="short">Doniraj</span>',
+    navMain: '<span class="full">&larr; Glavna stranica</span><span class="short">&larr;</span>',
+    heroEyebrow: "Godišnja članarina",
+    heroTitle: 'Postanite <span class="accent">član</span> IEC Ezana',
+    heroSub: "Članarina je način na koji naša zajednica nosi centar kroz cijelu godinu &mdash; ne samo jedan dar, nego stalna podrška na koju odbor može računati.",
+    heroBtnJoin: "Učlani se ili obnovi &darr;",
+    heroBtnDonate: "Radije bih donirao",
+    whyEyebrow: "Zašto je važno",
+    whyTitle: "Šta vaša članarina omogućava",
+    whyLead: "Donacije dolaze i prolaze sa sezonama. Članarina je ono što centru omogućava da planira unaprijed.",
+    why1Title: "Podrška cijele godine",
+    why1Body: "Jedna godišnja članarina održava svjetla upaljena, vrata otvorena i naše programe u toku svakog mjeseca &mdash; ne samo kad ima akcija prikupljanja.",
+    why2Title: "Vaša porodica se broji",
+    why2Body: "Učlanjenjem vaša porodica ulazi u evidenciju centra &mdash; stalni dio džemata, a ne samo ime na potvrdi.",
+    why3Title: "Jednostavno i poreski priznato",
+    why3Body: "Platite jednom za godinu i to je to. IEC Ezan je registrovana 501(c)(3) neprofitna organizacija, pa je članarina poreski priznata, a potvrdu dobijate na email.",
+    compareEyebrow: "Niste sigurni?",
+    compareTitle: "Članarina ili donacija?",
+    compare1Title: "Godišnja članarina",
+    compare1Body: "Određeni iznos jednom godišnje koji podržava svakodnevni rad centra. Najbolje ako je IEC Ezan vaš mesdžid i želite da se brojite kao njegov dio.",
+    compare1Link: "Učlani se ili obnovi &darr;",
+    compare2Title: "Jednokratna donacija",
+    compare2Body: "Dajte bilo koji iznos, bilo kada, za određenu kampanju &mdash; Kupi ciglu, fond za izgradnju džamije ili poseban događaj.",
+    compare2Link: "Idi na stranicu za donacije &rarr;",
+    joinEyebrow: "Pridružite nam se",
+    joinTitle: "Započnite svoju godišnju članarinu",
+    joinLead: "Odaberite članarinu ispod i dovršite je sigurno putem Givebuttera. Prihvataju se kartica, banka, Apple Pay, Google Pay, PayPal i Venmo.",
+    feeNote: '<strong>Dobro je znati:</strong> centar prima vašu punu članarinu &mdash; procesne naknade su pokrivene. Givebutter će na naplati predložiti opcioni tip za sebe, koji slobodno možete postaviti na $0. <a href="index.html#before-you-donate">Pogledajte kako &rarr;</a>',
+    joinCardTitle: "Godišnja članarina",
+    joinCardSub: "Islamsko-edukativni centar Ezan, Greater Des Moines",
+    joinFallback: "Ako se forma iznad ne učita, možete se učlaniti direktno na Givebutteru:",
+    joinFallbackBtn: "Otvori Givebutter stranicu &rarr;",
+    faqEyebrow: "Pitanja",
+    faqTitle: "Česta pitanja",
+    faq1Q: "Da li sam već član?",
+    faq1A: 'Ako niste sigurni da li je vaše domaćinstvo evidentirano ili kada je članarina zadnji put obnovljena, javite se centru i provjerit ćemo za vas. Kontakt podaci su na <a href="https://iecezan.com#contact">glavnoj stranici</a>.',
+    faq2Q: "Može li jedna članarina pokriti cijelu porodicu?",
+    faq2A: 'Članarina se obično vodi po domaćinstvu. Ako želite da vaša porodica bude zavedena zajedno ili imate pitanje o svojoj situaciji, <a href="https://iecezan.com#contact">javite nam se</a> i pomoći ćemo vam.',
+    faq3Q: "Zamjenjuje li članarina donaciju?",
+    faq3A: "Ne &mdash; imaju različite uloge. Članarina podržava svakodnevni rad centra tokom godine, dok donacije idu za određene kampanje poput nove džamije. Mnogi članovi rade oboje, koliko su u mogućnosti.",
+    faq4Q: "Da li je članarina poreski priznata?",
+    faq4A: "Jeste. IEC Ezan of Greater Des Moines je registrovana 501(c)(3) neprofitna organizacija, a Givebutter će vam poslati potvrdu na email čim uplata prođe.",
+    faq5Q: "Radije bih platio lično ili čekom.",
+    faq5A: 'To je sasvim u redu. Obratite se nekome u centru ili nam se <a href="https://iecezan.com#contact">javite</a> i riješit ćemo vašu članarinu na taj način.',
+    footerTag: "Hvala vam što stojite uz našu zajednicu. Allah primio od vas i vaše porodice.",
+    footerDonate: "Doniraj",
+    footerHome: "Glavna stranica",
+    footerAbout: "O nama",
+    footerContact: "Kontakt",
+    footerRights: "Sva prava zadržana."
+  }
+};
+
+function setLang(lang){
+  const dict = i18n[lang] || i18n.en;
+  document.documentElement.lang = lang === 'bs' ? 'bs' : 'en';
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if(dict[key] !== undefined){
+      if(key === 'brand'){
+        el.innerHTML = '<span class="bfull">' + dict.brand + '</span><span class="bshort">' + (dict.brandShort || dict.brand) + '</span>' +
+                       '<small data-i18n="brandSub">' + dict.brandSub + '</small>';
+      } else {
+        el.innerHTML = dict[key];
+      }
+    }
+  });
+  document.querySelectorAll('.lang-toggle button').forEach(b => {
+    const isActive = b.dataset.lang === lang;
+    b.classList.toggle('active', isActive);
+    b.setAttribute('aria-pressed', isActive);
+  });
+  try { localStorage.setItem('iecezan_lang', lang); } catch(e){}
+}
+document.querySelectorAll('.lang-toggle button').forEach(b => {
+  b.addEventListener('click', () => setLang(b.dataset.lang));
+});
+try {
+  const saved = localStorage.getItem('iecezan_lang');
+  if(saved) setLang(saved);
+  else if((navigator.language || '').toLowerCase().startsWith('bs')) setLang('bs');
+} catch(e){}
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
